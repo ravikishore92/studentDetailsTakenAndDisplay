@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+
+
+<form id="form">
+    Enter firstname:
+    <input type="text" name="firstName">
+    <br>
+    Enter lastname: 
+    <input type="text"  name="lastName">
+    <br>
+    Enter email:
+    <input type="email" name="email">
+    <br>
+    <button onclick="sub(event)">submit</button>
+
+<br>
+<br>
+    <button onclick="get(event)">getData</button>
+</form>
+<h2>Items Table</h2>
+<table id="itemTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody id="itemTableBody">
+    </tbody>
+</table>
+
+  
+
+    <script src='index.js'></script>
+</head>
+<body>
+    
+</body>
+</html>
