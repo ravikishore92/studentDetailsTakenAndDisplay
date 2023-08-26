@@ -29,6 +29,14 @@ function get(event)
     
     const itemTableBody = document.getElementById('itemTableBody');
 
+    const r = document.createElement('tr');
+                r.innerHTML = `
+                <th>ID</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+                `;
+                itemTableBody.appendChild(r);
     // Fetch data from the API
     fetch("http://localhost:8080/get")
         .then(response => response.json())
@@ -44,7 +52,6 @@ function get(event)
                 `;
                 itemTableBody.appendChild(row);
             });
-            items.clear();
         })
         
 
